@@ -91,6 +91,7 @@ img{
 }
 .contact-list{
     display: flex;
+    
 }
 .contact-list a{
     text-decoration: none;
