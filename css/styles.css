@@ -7,23 +7,32 @@ body{
 h1{
     color: white;
     font-size: 56px;
-    line-height: 1.07;
     font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 h2{
     font-size: 36px;
-    line-height: 1.11;
     font-weight: 500;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
 }
 h3{
     font-size: 20px;
-    line-height: 1.2;
     font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 p{
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+}
+
 .contact-list li,
 .advantages-list li,
 .navigation-list li,
@@ -31,8 +40,18 @@ p{
 .portfolio-list li{
     list-style-type: none;
 }
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+}
 
 /* header */
+.navigation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+}
 .logo{
     font-size: 18px;
     font-family: "Raleway", sans-serif;
@@ -46,6 +65,9 @@ p{
 .logo-header{
     color: #2e2f42;
 }
+.navigation-list{
+    display: flex;
+}
 .navigation-link{
     font-weight: 500;
 }
@@ -53,6 +75,9 @@ p{
     color:#434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.contact-list{
+    display: flex;
 }
 .contact-list a{
     text-decoration: none;
@@ -62,6 +87,12 @@ p{
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-decoration: none;
+}
+.navigation-list li,
+.contact-list li{
+    margin-right: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .contact{
     font-style: normal;
@@ -76,10 +107,17 @@ p{
 /* solutions - FIRST SECTION */
 .solutions{
     background-color: #2E2F42;
+    padding: 188px 0px;
+}
+.solutions-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .solutions-title{
-    letter-spacing: 0.02em;
+    max-width: 496px;
     text-align: center;
+    margin-bottom: 48px;
 }
 .solutions-button{
     font-size: 16px;
@@ -90,6 +128,9 @@ p{
     font-weight: 500;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .solutions-button:hover,
 .solutions-button:focus{
@@ -101,19 +142,35 @@ p{
 .advantages-title{
     color: white;
 }
+.advantages-wrapper{
+    padding: 120px 0px;
+}
+.advantages-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
 .advantages-item-describe{
     columns: #434455;
     letter-spacing: 0.02em;
 }
 .advantages-item-title{
     font-weight: 500;
-    letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: #2e2f42;
 }
 
 /* team - THIRD SECTION */
 .team{
     background-color: #F4F4FD;
+}
+.team-wrapper{
+    padding: 120px 0px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
 .team-item-title{
     font-weight: 500;
@@ -134,26 +191,40 @@ p{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.team-item-img{
+    margin-bottom: 32px;
 }
 .team-item{
     background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 32px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-item-title{
     color: #2e2f42;
     font-weight: 500;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-item-describe{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
-/* team - FOURTH SECTION */
+/* portfolio - FOURTH SECTION */
+.portfolio-wrapper{
+    padding: 120px 0px;
+}
 .portfolio-title{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .portfolio-item-title{
     font-weight: 500;
@@ -163,6 +234,31 @@ p{
 .portfolio-item-describe{
     letter-spacing: 0.02em;
     color: #434455;
+}
+.portfolio-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item{
+    max-width: 355px;
+    width: 33%;
+    margin-bottom: 48px;
+}
+.portfolio-item-img{
+    width: 100%;
+}
+.portfolio-item-text{
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+.portfolio-item-text{
+    padding: 32px 16px;
+}
+.portfolio-item-title{
+    margin-bottom: 8px;
 }
 
 /* footer */
@@ -176,8 +272,18 @@ p{
 .logo-footer{
     color: #F4F4FD;
 }
-
+.footer-wrapper{
+    padding: 100px 0px;
+}
+.footer-describe{
+    max-width: 264px;
+}
+.footer-wrapper a{
+    display: block;
+    margin-bottom: 16px;
+}
 /*
+CORNFLOWER #E7E9FC
 CLOUD #F4F4FD
 #404BBF 
 NAVYBLUE #2E2F42
