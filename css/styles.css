@@ -74,10 +74,11 @@ img{
     display: flex;
     width: 100%;
     padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
 }
 .navigation{
     padding: 24px 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
