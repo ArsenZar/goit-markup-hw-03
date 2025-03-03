@@ -1,3 +1,4 @@
+/* BASE styles*/
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -23,6 +24,15 @@ p{
     font-size: 16px;
     line-height: 1.5;
 }
+.contact-list li,
+.advantages-list li,
+.navigation-list li,
+.team-list li,
+.portfolio-list li{
+    list-style-type: none;
+}
+
+/* header */
 .logo{
     font-size: 18px;
     font-family: "Raleway", sans-serif;
@@ -39,22 +49,13 @@ p{
 .navigation-link{
     font-weight: 500;
 }
-.logo-footer{
-    color: #ffffff;
-}
-.solutions-title{
+.contact-list-link{
+    color:#434455;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
 }
 .contact-list a{
     text-decoration: none;
-}
-.contact-list li,
-.advantages-list li,
-.navigation-list li,
-.team-list li,
-.portfolio-list li{
-    list-style-type: none;
 }
 .navigation-list a{
     line-height: 1.5;
@@ -65,16 +66,20 @@ p{
 .contact{
     font-style: normal;
 }
-.contact-list-link{
-    color:#434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 .navigation-list a:hover,
 .navigation-list a:focus,
 .contact-list-link:hover,
 .contact-list-link:focus{
     color: #404BBF;
+}
+
+/* solutions - FIRST SECTION */
+.solutions{
+    background-color: #2E2F42;
+}
+.solutions-title{
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 .solutions-button{
     font-size: 16px;
@@ -91,9 +96,8 @@ p{
     background-color: #404BBF;
 
 }
-.solutions{
-    background-color: #2E2F42;
-}
+
+/* advantages - SECOND SECTION */
 .advantages-title{
     color: white;
 }
@@ -106,6 +110,11 @@ p{
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+
+/* team - THIRD SECTION */
+.team{
+    background-color: #F4F4FD;
+}
 .team-item-title{
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -113,9 +122,6 @@ p{
 .team-item-describe{
     letter-spacing: 0.02em;
     color: #434455;
-}
-.team{
-    background-color: #F4F4FD;
 }
 .portfolio-title{
     color: #2e2f42;
@@ -142,6 +148,8 @@ p{
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/* team - FOURTH SECTION */
 .portfolio-title{
     text-align: center;
     letter-spacing: 0.02em;
@@ -156,6 +164,8 @@ p{
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/* footer */
 .bottom-footer{
     background-color: #2E2F42;
 }
@@ -170,7 +180,7 @@ p{
 /*
 CLOUD #F4F4FD
 #404BBF 
-NAVY BLUE #2E2F42
+NAVYBLUE #2E2F42
 SLATE #434455
 IRIS #4D5AE5
 */
