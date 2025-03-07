@@ -78,7 +78,6 @@ img{
     align-items: center;
 }
 .navigation{
-    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,6 +115,7 @@ img{
     text-decoration: none;
 }
 .navigation-list a{
+    display: block;
     padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
